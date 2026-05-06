@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .stack-set {
+    @apply w-full h-full transition-all duration-700 ease-in-out;
+  }
+
+  .stack-img {
+    @apply absolute rounded-2xl object-cover shadow-xl cursor-pointer;
+  }
+
+  .img-a {
+    @apply left-[20px] top-[12rem] w-[44%] h-[35%] z-10 rotate-[-7deg];
+  }
+
+  .img-b {
+    @apply left-[40%] top-[11rem] w-[55%] h-[45%] z-30 rotate-0;
+  }
+
+  .img-c {
+    @apply left-[4.5rem] top-[3rem] lg:top-0 w-[65%] h-[55%] z-20 rotate-[7deg];
+  }
+
+  .content-berita {
+    font-size: 1rem;
+    /* BASE FONT */
+    line-height: 1.75;
+    color: inherit;
+  }
+
+  /* PAKSA SEMUA ELEMEN TEKS */
+  .content-berita *,
+  .content-berita span,
+  .content-berita p,
+  .content-berita div {
+    font-size: inherit !important;
+    font-family: inherit !important;
+    color: inherit;
+  }
+
+  /* PARAGRAF */
+  .content-berita p {
+    margin-bottom: 1.25rem;
+    text-align: justify;
+  }
+
+  /* GAMBAR */
+  .content-berita img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 0.75rem;
+    margin: 1.5rem 0;
+  }
+
+  /* HEADING KALAU ADA */
+  .content-berita h1,
+  .content-berita h2,
+  .content-berita h3 {
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+  }
+}
+
+
+
+@layer utilities {
+  @keyframes stack-in {
+    0% {
+      opacity: 0;
+      transform: translateY(24px) scale(0.9) rotate(var(--tw-rotate));
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1) rotate(var(--tw-rotate));
+    }
+  }
+
+  .animate-stack-in {
+    animation: stack-in 0.8s cubic-bezier(.4, 0, .2, 1) forwards;
+  }
+}

@@ -1,0 +1,14 @@
+/vendor/
+/node_modules/
+/writable/
+/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Composer cache
+composer.phar

@@ -1,0 +1,24 @@
+[10-Jul-2025 19:23:20 UTC] PHP Fatal error:  Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at __mnx_runtime:1) in /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:713
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(713): setcookie()
+#2 /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(689): CodeIgniter\HTTP\Response->doSetCookie()
+#3 /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(669): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(377): CodeIgniter\HTTP\Response->sendCookies()
+#5 /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/Debug/ExceptionHandler.php(85): CodeIgniter\HTTP\Response->send()
+#6 /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/Debug/Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle()
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#8 {main}
+  thrown in /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php on line 713
+[10-Jul-2025 23:27:36 UTC] PHP Fatal error:  Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at __mnx_runtime:1) in /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php:713
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(713): setcookie()
+#2 /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(689): CodeIgniter\HTTP\Response->doSetCookie()
+#3 /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(669): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php(377): CodeIgniter\HTTP\Response->sendCookies()
+#5 /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/Debug/ExceptionHandler.php(85): CodeIgniter\HTTP\Response->send()
+#6 /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/Debug/Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle()
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#8 {main}
+  thrown in /home/newb4343/public_html/siberkreasimu.com/vendor/codeigniter4/framework/system/HTTP/ResponseTrait.php on line 713

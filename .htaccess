@@ -1,0 +1,11 @@
+# Blok file sensitif
+<FilesMatch "(\.env|composer\.json|composer\.lock|preload\.php|spark)">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Blok folder internal CI4
+RedirectMatch 403 ^/(app|system|writable|tests)(.*)$
+
+# Matikan index folder
+Options -Indexes
